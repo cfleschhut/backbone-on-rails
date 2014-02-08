@@ -7,7 +7,6 @@ class Raffler.Routers.Entries extends Backbone.Router
     @collection = new Raffler.Collections.Entries()
     @collection.reset($('#container').data('entries'))
 
-
   index: ->
     view = new Raffler.Views.EntriesIndex(collection: @collection)
     $('#container').html(view.render().el)
