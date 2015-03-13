@@ -15,6 +15,8 @@ end
 gem 'jquery-rails'
 gem 'backbone-on-rails'
 
+gem 'foundation-rails'
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
