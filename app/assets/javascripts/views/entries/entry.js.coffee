@@ -13,8 +13,8 @@ class Raffler.Views.Entry extends Backbone.View
     Backbone.history.navigate("entries/#{@model.get('id')}", true)
 
   highlightWinner: ->
-    $('.winner').removeClass('highlight')
-    @$('.winner').addClass('highlight')
+    $('.panel').removeClass('callout')
+    @$('.panel').addClass('callout')
 
   render: ->
     $(@el).html(@template(entry: @model))

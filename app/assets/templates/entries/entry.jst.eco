@@ -1,4 +1,6 @@
-<%= @entry.get('name') %>
-<% if @entry.get('winner'): %>
-  <span class="winner">WINNER</span>
-<% end %>
+<div class="panel">
+  <%= @entry.get('name') %>
+  <% if @entry.get('winner'): %>
+    <sup class="winner">★</sup>
+  <% end %>
+</div>

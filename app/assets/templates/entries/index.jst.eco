@@ -1,10 +1,14 @@
 <h1>Raffler</h1>
 
 <form id="new_entry">
-  <input type="text" name="name" id="new_entry_name">
-  <input type="submit" value="Add">
+  <fieldset>
+    <legend>Add name</legend>
+    <input type="text" name="name" id="new_entry_name" placeholder="Firstname Lastname">
+    <input type="submit" value="Add" class="button secondary expand radius">
+  </fieldset>
 </form>
 
-<ul id="entries"></ul>
+<ul id="entries" class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+</ul>
 
-<button id="draw">Draw Winner</button>
+<button id="draw" class="button expand radius">Draw Winner</button>
