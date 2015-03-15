@@ -3,7 +3,7 @@ class Raffler.Collections.Entries extends Backbone.Collection
   model: Raffler.Models.Entry
 
   comparator: (entry) ->
-    return entry.get('name')
+    entry.get('name')
 
   drawWinner: ->
     winner = @shuffle()[0]
