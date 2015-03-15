@@ -2,6 +2,7 @@ Raffler::Application.routes.draw do
 
   scope 'api' do
     resources :entries
+    resources :appointments
   end
 
   root to: 'main#index'
