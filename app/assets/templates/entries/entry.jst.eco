@@ -3,4 +3,5 @@
   <% if @entry.get('winner'): %>
     <sup class="winner">★</sup>
   <% end %>
+  <a class="deleteEntry">(delete)</a>
 </div>

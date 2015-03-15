@@ -5,3 +5,6 @@ class Raffler.Models.Entry extends Backbone.Model
     @set(winner: true)
     @save()
     @trigger('highlight')
+
+  delete: ->
+    @destroy()
